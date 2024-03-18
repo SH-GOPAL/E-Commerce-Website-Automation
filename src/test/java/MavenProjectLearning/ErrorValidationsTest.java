@@ -27,7 +27,7 @@ public class ErrorValidationsTest extends BaseTest {
 	public void ProductErrorValidation() throws IOException, InterruptedException
 	{
 		String productName = "ZARA COAT 3";
-		ProductCatalogue productCatalogue = landingPage.loginApplication("rahulshetty@gmail.com", "Iamking@000");
+		ProductCatalogue productCatalogue = landingPage.loginApplication("sharma007gopal@gmail.com", "Gopal00@");
 		List<WebElement> products = productCatalogue.getProductList();
 		productCatalogue.addProductToCart(productName);
 		CartPage cartPage = productCatalogue.goToCartPage();

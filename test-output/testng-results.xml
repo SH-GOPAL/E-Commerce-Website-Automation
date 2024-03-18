@@ -1,97 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-06T10:15:14 IST" name="Suite" finished-at="2024-03-06T10:15:44 IST" duration-ms="29802">
+  <suite started-at="2024-03-15T13:33:32 IST" name="Default suite" finished-at="2024-03-15T13:33:39 IST" duration-ms="7385">
     <groups>
-      <group name="ErrorHandling">
-        <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:MavenProjectLearning.ErrorValidationsTest@5dcd8c7a]" name="LoginErrorValidation" class="MavenProjectLearning.ErrorValidationsTest"/>
-      </group> <!-- ErrorHandling -->
-      <group name="Purchase">
-        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" name="submitOrder" class="MavenProjectLearning.SubmitOrderTest"/>
-      </group> <!-- Purchase -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@8462f31]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2024-03-06T10:15:14 IST" name="Submit Order Test" finished-at="2024-03-06T10:15:35 IST" duration-ms="21223">
-      <class name="MavenProjectLearning.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" started-at="2024-03-06T10:15:14 IST" name="launchApplication" finished-at="2024-03-06T10:15:17 IST" duration-ms="2960" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" started-at="2024-03-06T10:15:17 IST" name="submitOrder" data-provider="getData" finished-at="2024-03-06T10:15:21 IST" duration-ms="4034" status="PASS">
+    <test started-at="2024-03-15T13:33:32 IST" name="Default test" finished-at="2024-03-15T13:33:39 IST" duration-ms="7385">
+      <class name="Cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber.TestNGTestRunner@8462f31]" started-at="2024-03-15T13:33:32 IST" name="setUpClass" finished-at="2024-03-15T13:33:32 IST" duration-ms="622" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Iamking@000, product=ZARA COAT 3, email=anshika@gmail.com}]]>
+                <![CDATA[org.testng.TestRunner@4eb166a1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" started-at="2024-03-06T10:15:21 IST" name="tearDown" finished-at="2024-03-06T10:15:22 IST" duration-ms="129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" started-at="2024-03-06T10:15:22 IST" name="launchApplication" finished-at="2024-03-06T10:15:26 IST" duration-ms="4017" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" started-at="2024-03-06T10:15:26 IST" name="submitOrder" data-provider="getData" finished-at="2024-03-06T10:15:31 IST" duration-ms="4990" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber.TestNGTestRunner@8462f31]" started-at="2024-03-15T13:33:32 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-15T13:33:39 IST" duration-ms="6692" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=Iamking@000, product=ADIDAS ORIGINAL, email=shetty@gmail.com}]]>
+                <![CDATA["Title of your scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Error validation"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" started-at="2024-03-06T10:15:31 IST" name="tearDown" finished-at="2024-03-06T10:15:31 IST" duration-ms="125" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber.TestNGTestRunner@8462f31]" started-at="2024-03-15T13:33:39 IST" name="tearDownClass" finished-at="2024-03-15T13:33:39 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" started-at="2024-03-06T10:15:31 IST" name="launchApplication" finished-at="2024-03-06T10:15:35 IST" duration-ms="4121" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" started-at="2024-03-06T10:15:35 IST" name="OrderHistoryTest" finished-at="2024-03-06T10:15:35 IST" depends-on-methods="MavenProjectLearning.SubmitOrderTest.submitOrder" duration-ms="525" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:MavenProjectLearning.SubmitOrderTest@6eb2384f]" started-at="2024-03-06T10:15:35 IST" name="tearDown" finished-at="2024-03-06T10:15:35 IST" duration-ms="104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- MavenProjectLearning.SubmitOrderTest -->
-    </test> <!-- Submit Order Test -->
-    <test started-at="2024-03-06T10:15:36 IST" name="Error Validations Test" finished-at="2024-03-06T10:15:44 IST" duration-ms="8257">
-      <class name="MavenProjectLearning.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MavenProjectLearning.ErrorValidationsTest@5dcd8c7a]" started-at="2024-03-06T10:15:36 IST" name="launchApplication" finished-at="2024-03-06T10:15:39 IST" duration-ms="3318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:MavenProjectLearning.ErrorValidationsTest@5dcd8c7a]" started-at="2024-03-06T10:15:39 IST" name="LoginErrorValidation" finished-at="2024-03-06T10:15:40 IST" duration-ms="470" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:MavenProjectLearning.ErrorValidationsTest@5dcd8c7a]" started-at="2024-03-06T10:15:40 IST" name="tearDown" finished-at="2024-03-06T10:15:40 IST" duration-ms="120" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:MavenProjectLearning.ErrorValidationsTest@5dcd8c7a]" started-at="2024-03-06T10:15:40 IST" name="launchApplication" finished-at="2024-03-06T10:15:42 IST" duration-ms="2136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:MavenProjectLearning.ErrorValidationsTest@5dcd8c7a]" started-at="2024-03-06T10:15:42 IST" name="ProductErrorValidation" finished-at="2024-03-06T10:15:44 IST" duration-ms="2104" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:MavenProjectLearning.ErrorValidationsTest@5dcd8c7a]" started-at="2024-03-06T10:15:44 IST" name="tearDown" finished-at="2024-03-06T10:15:44 IST" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- MavenProjectLearning.ErrorValidationsTest -->
-    </test> <!-- Error Validations Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

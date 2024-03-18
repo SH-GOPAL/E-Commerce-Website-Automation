@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="MavenProjectLearning.TestComponent.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Submit Order Test(failed)" verbose="0">
+    <classes>
+      <class name="MavenProjectLearning.SubmitOrderTest">
+        <methods>
+          <include name="submitOrder" invocation-numbers="0"/>
+          <include name="OrderHistoryTest"/>
+          <include name="tearDown"/>
+          <include name="launchApplication"/>
+        </methods>
+      </class> <!-- MavenProjectLearning.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit Order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
